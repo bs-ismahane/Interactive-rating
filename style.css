@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    font-size:15px;
+    background: var(--VeryDarkBlue);
+}
+.container{
+    border-radius:12px;
+    padding:30px;
+    margin-left: auto;
+    margin-right:auto;
+    background:linear-gradient(45deg,var(--DarkBlue)10%,var(--VeryDarkBlue));
+}
+.starImg{
+    border-radius:50%;
+    background:var(--VeryDarkBlue);
+    padding:10px;
+}
+h1{
+    font-size:31px;
+    margin:20px auto;
+    color:var(--White);
+}
+p{
+    margin:10px auto;
+    color:var(--LightGrey);
+    text-align: center;
+}
+.progres{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.star{
+    border-radius:50%;
+    background-color:var(--DarkBlue);
+    cursor: pointer;
+    color:var(--LightGrey);
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.star:hover{
+    background:var(--Orange);
+}
+.submit{
+    display:block;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    padding:6px;
+    border-radius:12px;
+    border:none;
+    background-color:var(--Orange);
+    cursor: pointer;
+    font-size: 18px;
+}
+.clicked{
+    background-color: var(--White) !important;
+}
+.thankImg{
+    width:280px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+.thankButton{
+    background:var(--DarkBlue);
+    width:80%;
+    display:block;
+    padding:8px;
+    border:none;
+    border-radius:16px;
+    margin:20px;
+    margin-left:auto;
+    margin-right:auto;
+    color:var(--White);
+    font-size:18px;
+}
+.title{
+    text-align:center;
+}
+@media(min-width:768px){
+    .container{
+        margin-top:100px;
+        width:500px;
+    }
+}
+@media(max-width:768px){
+    .container{
+        margin-top:20px;
+        max-width:100%;
+    }
+}
+footer{
+    display: block;
+    position:absolute;
+    bottom:2px;
+    width:100%;
+    font-size:18px;
+    color:white;
+    text-align: center;
+}
+footer a{
+    font-weight:bold;
+    color:var(--Orange);
+    text-decoration: none;
+}
